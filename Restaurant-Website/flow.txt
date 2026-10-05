@@ -1,0 +1,217 @@
+Restaurant Website
+Stage 1 — Project Setup & Website Foundation
+
+Set up:
+
+Project files
+HTML structure
+CSS foundation
+Restaurant branding
+Main page sections
+Basic responsive foundation
+Stage 2 — Navbar & Mobile Navigation
+
+Build:
+
+Desktop navbar
+Navigation links
+CTA button
+Mobile menu
+Open/close interaction
+Stage 3 — Hero Section
+
+Build:
+
+Restaurant introduction
+Headline
+Description
+CTA buttons
+Hero image
+Supporting information
+Stage 4 — About Restaurant Section
+
+Build:
+
+Restaurant story
+Image/content layout
+Statistics
+Responsive layout
+Stage 5 — Dynamic Menu Data & Rendering
+
+This begins the core JavaScript section.
+
+Build:
+
+Menu data array
+Menu objects
+Dynamic menu cards
+DOM rendering
+Empty state
+Stage 6 — Menu Category Filtering
+
+Build:
+
+Category buttons
+Filter logic
+Active category state
+Dynamic results
+Stage 7 — Menu Search
+
+Build:
+
+Search input
+Search event
+Search/filter combination
+No-results state
+Stage 8 — Menu Details Modal
+
+Build:
+
+Menu item modal
+Dynamic modal content
+Open/close behavior
+Overlay interaction
+Escape-key handling
+Stage 9 — Special Offers Section
+
+Build:
+
+Featured offers
+Offer cards
+Pricing
+CTA interaction
+Stage 10 — Gallery Section
+
+Build:
+
+Restaurant/gallery images
+Responsive gallery
+Image interaction
+Stage 11 — Testimonials Section
+
+Build:
+
+Customer testimonials
+Ratings
+Customer information
+Responsive cards
+Stage 12 — Reservation Form & Interaction
+
+Build:
+
+Reservation form
+Guest information
+Date/time
+Number of guests
+Validation
+Success feedback
+Stage 13 — Contact Section
+
+Build:
+
+Address
+Phone
+Email
+Opening hours
+Contact form
+Map/location area
+Stage 14 — Scroll Reveal with IntersectionObserver
+
+Learn and implement:
+
+IntersectionObserver
+
+Use it for:
+
+Section reveals
+Cards
+Images
+Content
+Stage 15 — Responsive Design & Mobile Polish
+
+Test and refine:
+
+Desktop
+Tablet
+Mobile
+Navigation
+Menu
+Modal
+Forms
+Gallery
+Spacing
+Typography
+Stage 16 — Micro-interactions & UI Polish
+
+Add restrained professional details:
+
+Hover states
+Button interactions
+Card transitions
+Menu transitions
+Modal transitions
+Input feedback
+Active states
+
+No unnecessary heavy animations.
+
+Stage 17 — Full Website Testing & Debugging
+
+Test the complete system:
+
+Navbar
+Hero
+About
+Menu
+Filtering
+Search
+Modal
+Offers
+Gallery
+Testimonials
+Reservation
+Contact
+Scroll animations
+Responsive layout
+
+We'll deliberately test edge cases and fix problems rather than assuming everything works.
+
+Stage 18 — Final Review & Project Completion
+
+Final review of:
+
+HTML structure
+CSS organization
+JavaScript logic
+DOM manipulation
+Arrays/objects
+Filtering
+Search
+Modal state
+Forms
+IntersectionObserver
+Responsive behavior
+Accessibility basics
+Code quality
+
+Then the project is officially complete.
+
+Stage Workflow
+
+Every stage will use:
+
+STAGE
+  ↓
+What we're building
+  ↓
+Why it matters
+  ↓
+Concepts being learned
+  ↓
+Implementation
+  ↓
+Test
+  ↓
+Checkpoint
+  ↓
+NEXT STAGE
