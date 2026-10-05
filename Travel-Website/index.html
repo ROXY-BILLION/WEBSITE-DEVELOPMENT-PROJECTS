@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Wanderly — Discover extraordinary destinations and unforgettable travel experiences."
+    >
+
+    <title>Wanderly | Discover Your Next Journey</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header" id="home">
+
+        <div class="container navbar">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">
+                    <i class="fa-solid fa-compass"></i>
+                </span>
+                <span>Wanderly</span>
+            </a>
+
+            <nav class="desktop-navigation">
+                <a href="#home" class="active">Home</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#trips">Trips</a>
+                <a href="#why-us">Why Us</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <a href="#destinations" class="nav-button">
+                Explore
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-navigation" id="mobileNavigation">
+
+            <a href="#home">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#trips">Trips</a>
+            <a href="#why-us">Why Us</a>
+            <a href="#contact">Contact</a>
+
+            <a href="#destinations" class="mobile-nav-button">
+                Explore Destinations
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero-section">
+
+            <div class="container hero-content">
+
+                <div class="hero-text reveal reveal-left">
+
+                    <span class="section-label">
+                        <span></span>
+                        Explore the extraordinary
+                    </span>
+
+                    <h1>
+                        The world is
+                        <em>waiting.</em>
+                    </h1>
+
+                    <p>
+                        Discover breathtaking destinations, unforgettable
+                        experiences, and journeys designed to turn your
+                        travel dreams into memories.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="#destinations" class="primary-button">
+                            Explore destinations
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="#trips" class="secondary-button">
+                            View featured trips
+                        </a>
+
+                    </div>
+
+                    <div class="hero-stats">
+
+                        <div class="hero-stat">
+                            <strong>120+</strong>
+                            <span>Destinations</span>
+                        </div>
+
+                        <div class="hero-stat">
+                            <strong>35K+</strong>
+                            <span>Happy travelers</span>
+                        </div>
+
+                        <div class="hero-stat">
+                            <strong>4.9/5</strong>
+                            <span>Traveler rating</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-visual reveal reveal-right">
+
+                    <div class="hero-image-wrapper">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1400&q=85"
+                            alt="Beautiful mountain landscape"
+                        >
+
+                        <div class="hero-location-card">
+
+                            <div class="location-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+
+                            <div>
+                                <span>Trending destination</span>
+                                <strong>Swiss Alps</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="hero-decoration hero-decoration-one"></div>
+                    <div class="hero-decoration hero-decoration-two"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Popular Destinations -->
+        <section class="destinations-section" id="destinations">
+
+            <div class="container">
+
+                <div class="section-heading-row reveal reveal-up">
+
+                    <div>
+                        <span class="section-label">
+                            <span></span>
+                            Discover
+                        </span>
+
+                        <h2>
+                            Popular
+                            <em>destinations.</em>
+                        </h2>
+                    </div>
+
+                    <span class="section-number">01</span>
+
+                </div>
+
+
+                <div class="destination-controls reveal reveal-up">
+
+                    <div class="category-filters" id="categoryFilters">
+
+                        <button
+                            class="filter-button active"
+                            type="button"
+                            data-category="All"
+                        >
+                            All
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            type="button"
+                            data-category="Beaches"
+                        >
+                            Beaches
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            type="button"
+                            data-category="Mountains"
+                        >
+                            Mountains
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            type="button"
+                            data-category="Cities"
+                        >
+                            Cities
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            type="button"
+                            data-category="Adventure"
+                        >
+                            Adventure
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            type="button"
+                            data-category="Luxury"
+                        >
+                            Luxury
+                        </button>
+
+                    </div>
+
+
+                    <div class="destination-search">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="search"
+                            id="destinationSearch"
+                            placeholder="Search destinations..."
+                            aria-label="Search destinations"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="destination-grid"
+                    id="destinationGrid"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Featured Trips -->
+        <section class="trips-section" id="trips">
+
+            <div class="container">
+
+                <div class="section-heading-row reveal reveal-up">
+
+                    <div>
+                        <span class="section-label">
+                            <span></span>
+                            Curated journeys
+                        </span>
+
+                        <h2>
+                            Trips worth
+                            <em>taking.</em>
+                        </h2>
+                    </div>
+
+                    <span class="section-number">02</span>
+
+                </div>
+
+
+                <div class="trips-grid">
+
+                    <article class="trip-card reveal reveal-left">
+
+                        <div class="trip-card-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1200&q=85"
+                                alt="European travel experience"
+                            >
+
+                        </div>
+
+                        <div class="trip-card-content">
+
+                            <span>10 Days · Europe</span>
+
+                            <h3>European Discovery</h3>
+
+                            <p>
+                                A carefully planned journey through some
+                                of Europe's most beautiful cities.
+                            </p>
+
+                            <div class="trip-card-bottom">
+                                <strong>From $2,490</strong>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="trip-card reveal reveal-up">
+
+                        <div class="trip-card-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=85"
+                                alt="African safari landscape"
+                            >
+
+                        </div>
+
+                        <div class="trip-card-content">
+
+                            <span>8 Days · Africa</span>
+
+                            <h3>Wild Africa Escape</h3>
+
+                            <p>
+                                Experience extraordinary wildlife,
+                                landscapes, and unforgettable adventure.
+                            </p>
+
+                            <div class="trip-card-bottom">
+                                <strong>From $2,150</strong>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="trip-card reveal reveal-right">
+
+                        <div class="trip-card-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85"
+                                alt="Tropical beach vacation"
+                            >
+
+                        </div>
+
+                        <div class="trip-card-content">
+
+                            <span>7 Days · Caribbean</span>
+
+                            <h3>Island Serenity</h3>
+
+                            <p>
+                                Slow down, reconnect, and enjoy a week
+                                surrounded by tropical beauty.
+                            </p>
+
+                            <div class="trip-card-bottom">
+                                <strong>From $1,780</strong>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Why Choose Us -->
+        <section class="why-section" id="why-us">
+
+            <div class="container why-grid">
+
+                <div class="why-image reveal reveal-left">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=85"
+                        alt="Traveler enjoying a scenic landscape"
+                    >
+
+                    <div class="experience-card">
+                        <strong>15+</strong>
+                        <span>
+                            Years creating<br>
+                            unforgettable journeys
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="why-content reveal reveal-right">
+
+                    <span class="section-label">
+                        <span></span>
+                        Why Wanderly
+                    </span>
+
+                    <h2>
+                        Travel should feel
+                        <em>extraordinary.</em>
+                    </h2>
+
+                    <p class="why-intro">
+                        We believe the best journeys are about more than
+                        checking places off a map. They're about discovering
+                        new perspectives, meeting people, and creating stories
+                        you'll carry forever.
+                    </p>
+
+
+                    <div class="benefits-list">
+
+                        <div class="benefit-item">
+
+                            <div class="benefit-icon">
+                                <i class="fa-solid fa-earth-americas"></i>
+                            </div>
+
+                            <div>
+                                <h3>Handpicked destinations</h3>
+
+                                <p>
+                                    Every destination is carefully selected
+                                    for its unique character and experience.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="benefit-item">
+
+                            <div class="benefit-icon">
+                                <i class="fa-solid fa-route"></i>
+                            </div>
+
+                            <div>
+                                <h3>Thoughtful itineraries</h3>
+
+                                <p>
+                                    Travel plans designed to give you freedom
+                                    without the stress of planning everything.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="benefit-item">
+
+                            <div class="benefit-icon">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+
+                            <div>
+                                <h3>Travel support</h3>
+
+                                <p>
+                                    Our team is available whenever you need
+                                    guidance before or during your journey.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Testimonials -->
+        <section class="testimonials-section">
+
+            <div class="container">
+
+                <div class="section-heading-row reveal reveal-up">
+
+                    <div>
+                        <span class="section-label">
+                            <span></span>
+                            Traveler stories
+                        </span>
+
+                        <h2>
+                            Loved by
+                            <em>travelers.</em>
+                        </h2>
+                    </div>
+
+                    <span class="section-number">03</span>
+
+                </div>
+
+
+                <div class="testimonial-grid">
+
+                    <article class="testimonial-card reveal reveal-left">
+
+                        <div class="testimonial-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <p>
+                            "Wanderly completely changed how I think about
+                            travel. Everything was beautifully organized,
+                            but the experience still felt spontaneous."
+                        </p>
+
+                        <div class="testimonial-author">
+
+                            <div class="author-avatar">AM</div>
+
+                            <div>
+                                <strong>Amelia Morgan</strong>
+                                <span>London, UK</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="testimonial-card reveal reveal-up">
+
+                        <div class="testimonial-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <p>
+                            "The attention to detail was incredible. From
+                            the hotel recommendations to the local experiences,
+                            everything felt personal."
+                        </p>
+
+                        <div class="testimonial-author">
+
+                            <div class="author-avatar">DK</div>
+
+                            <div>
+                                <strong>Daniel King</strong>
+                                <span>Toronto, Canada</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="testimonial-card reveal reveal-right">
+
+                        <div class="testimonial-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <p>
+                            "Our family trip became one of those memories
+                            we'll talk about for years. Wanderly made the
+                            whole process effortless."
+                        </p>
+
+                        <div class="testimonial-author">
+
+                            <div class="author-avatar">SR</div>
+
+                            <div>
+                                <strong>Sofia Reynolds</strong>
+                                <span>Sydney, Australia</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+
+            <div class="container">
+
+                <div class="newsletter-card reveal reveal-up">
+
+                    <div class="newsletter-content">
+
+                        <span class="section-label">
+                            <span></span>
+                            Stay inspired
+                        </span>
+
+                        <h2>
+                            Your next adventure
+                            <em>starts here.</em>
+                        </h2>
+
+                        <p>
+                            Get destination inspiration, exclusive travel
+                            offers, and new journey ideas delivered to your inbox.
+                        </p>
+
+                    </div>
+
+
+                    <form
+                        class="newsletter-form"
+                        id="newsletterForm"
+                        novalidate
+                    >
+
+                        <div class="newsletter-input-wrapper">
+
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="newsletterEmail"
+                                placeholder="Your email address"
+                                aria-label="Email address"
+                                required
+                            >
+
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="primary-button"
+                        >
+                            Subscribe
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                        <p
+                            class="newsletter-message"
+                            id="newsletterMessage"
+                        ></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section class="contact-section" id="contact">
+
+            <div class="container contact-grid">
+
+                <div class="contact-content reveal reveal-left">
+
+                    <span class="section-label">
+                        <span></span>
+                        Get in touch
+                    </span>
+
+                    <h2>
+                        Let's plan your
+                        <em>next adventure.</em>
+                    </h2>
+
+                    <p>
+                        Have a question about a destination or need help
+                        planning your next trip? Our travel team would love
+                        to hear from you.
+                    </p>
+
+
+                    <div class="contact-details">
+
+                        <div class="contact-detail">
+
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+
+                            <div>
+                                <span>Email</span>
+                                <strong>hello@wanderly.com</strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-detail">
+
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+
+                            <div>
+                                <span>Phone</span>
+                                <strong>+1 800 555 0198</strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-detail">
+
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+
+                            <div>
+                                <span>Studio</span>
+                                <strong>24 Ocean Avenue, Lisbon</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-visual reveal reveal-right">
+
+                    <div class="contact-map">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <span>Wanderly Travel Studio</span>
+
+                        <small>
+                            Lisbon · Portugal
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+                    <span class="logo-icon">
+                        <i class="fa-solid fa-compass"></i>
+                    </span>
+
+                    <span>Wanderly</span>
+                </a>
+
+                <p>
+                    Helping curious travelers discover extraordinary
+                    places and unforgettable experiences.
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Explore</h3>
+
+                <a href="#destinations">Destinations</a>
+                <a href="#trips">Featured Trips</a>
+                <a href="#why-us">Why Wanderly</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Categories</h3>
+
+                <a href="#destinations">Beaches</a>
+                <a href="#destinations">Mountains</a>
+                <a href="#destinations">Cities</a>
+                <a href="#destinations">Adventure</a>
+                <a href="#destinations">Luxury</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <span>hello@wanderly.com</span>
+                <span>+1 800 555 0198</span>
+                <span>Lisbon, Portugal</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <p>
+                © 2026 Wanderly. All rights reserved.
+            </p>
+
+            <p>
+                Travel far. Live fully.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Destination Details Modal -->
+    <div
+        class="destination-modal"
+        id="destinationModal"
+        aria-hidden="true"
+    >
+
+        <div
+            class="destination-modal-overlay"
+            id="destinationModalOverlay"
+        ></div>
+
+        <div
+            class="destination-modal-content"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalDestinationName"
+        >
+
+            <button
+                class="destination-modal-close"
+                id="destinationModalClose"
+                type="button"
+                aria-label="Close destination details"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+
+            <div class="destination-modal-image">
+
+                <img
+                    id="modalDestinationImage"
+                    src=""
+                    alt=""
+                >
+
+            </div>
+
+
+            <div class="destination-modal-info">
+
+                <span
+                    class="modal-destination-category"
+                    id="modalDestinationCategory"
+                ></span>
+
+                <h2 id="modalDestinationName"></h2>
+
+                <p
+                    class="modal-destination-location"
+                    id="modalDestinationLocation"
+                ></p>
+
+                <p
+                    class="modal-destination-description"
+                    id="modalDestinationDescription"
+                ></p>
+
+                <div class="modal-destination-bottom">
+
+                    <strong id="modalDestinationPrice"></strong>
+
+                    <span>
+                        <i class="fa-solid fa-plane"></i>
+                        Explore this destination
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Scroll To Top -->
+    <button
+        class="scroll-top"
+        id="scrollTopButton"
+        type="button"
+        aria-label="Scroll to top"
+    >
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
