@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="The personal portfolio of a software engineer showcasing skills and projects."
+    >
+    <title>My Portfolio | Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- FEATURE 1: Header and Navigation -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="#home" class="logo">X-Technologies</a>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-controls="nav-links"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- FEATURE 2: Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+                <h1>My Name is Okeke Divine Gift</h1>
+
+                <h2>Software Engineer</h2>
+
+                <p class="hero-description">
+                    I build websites and digital experiences using modern
+                    web technologies. Explore my skills and projects to
+                    learn more about my work.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="button button-primary">
+                        View My Projects
+                    </a>
+
+                    <a href="#contact" class="button button-secondary">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURE 3: About Section -->
+        <section class="section about-section" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h2>About Me</h2>
+                <p>A little introduction about who I am.</p>
+            </div>
+
+            <div class="about-content">
+                <img
+                    src="images/images (13).jpeg"
+                    alt="Portrait of Okeke Divine Gift"
+                    class="about-image"
+                    loading="lazy"
+                >
+
+                <div class="about-text">
+                    <h3>Who I Am</h3>
+
+                    <p>
+                        I am an aspiring software engineer who enjoys
+                        learning how websites work and turning ideas
+                        into useful digital experiences.
+                    </p>
+
+                    <p>
+                        I am developing my skills in HTML, CSS, and
+                        JavaScript while building projects that help me
+                        improve my problem-solving and development skills.
+                    </p>
+
+                    <a href="#contact" class="text-link">
+                        Let's Connect
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURE 4: Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="section-heading">
+                <p class="eyebrow">WHAT I AM LEARNING</p>
+                <h2>My Skills</h2>
+                <p>The technologies I use to build websites.</p>
+            </div>
+
+            <div class="skills-list">
+                <article class="skill-card">
+                    <div class="skill-icon" aria-hidden="true">H5</div>
+                    <h3>HTML5</h3>
+                    <p>Building structured web pages.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon" aria-hidden="true">C3</div>
+                    <h3>CSS3</h3>
+                    <p>Styling layouts and website elements.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon" aria-hidden="true">JS</div>
+                    <h3>JavaScript</h3>
+                    <p>Adding interaction and functionality.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon" aria-hidden="true">R</div>
+                    <h3>Responsive Design</h3>
+                    <p>Adapting layouts to different screens.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- FEATURE 5: Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="section-heading">
+                <p class="eyebrow">MY RECENT WORK</p>
+                <h2>Featured Projects</h2>
+                <p>A selection of projects I have worked on.</p>
+            </div>
+
+            <div class="project-list">
+
+                <article class="project-card">
+                    <img
+                        src="images/Quiz Game - Google Chrome 8_10_2026 6_44_49 PM.png"
+                        alt="Preview of the Quiz Game project"
+                        class="project-image"
+                        loading="lazy"
+                    >
+
+                    <div class="project-content">
+                        <h3>Quiz Game</h3>
+
+                        <p>
+                            An interactive quiz experience where users
+                            can answer questions and test their knowledge.
+                        </p>
+
+                        <p class="project-tech">
+                            HTML · CSS · JavaScript
+                        </p>
+
+                        <a
+                            href="https://frontend-compilation-puce.vercel.app/"
+                            class="button button-primary project-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Project
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img
+                        src="images/CreateAccount _ Registration - Google Chrome 10_5_2026 11_24_46 AM.png"
+                        alt="Preview of the Registration Form project"
+                        class="project-image"
+                        loading="lazy"
+                    >
+
+                    <div class="project-content">
+                        <h3>Registration Form</h3>
+
+                        <p>
+                            A registration interface designed to collect
+                            user details through a clear form layout.
+                        </p>
+
+                        <p class="project-tech">
+                            HTML · CSS · JavaScript
+                        </p>
+
+                        <a
+                            href="https://registration-form-pi-nine.vercel.app/"
+                            class="button button-primary project-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Project
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img
+                        src="images/NexaPhone X1 - Google Chrome 10_4_2026 1_54_41 PM.png"
+                        alt="Preview of the NexaPhone website"
+                        class="project-image"
+                        loading="lazy"
+                    >
+
+                    <div class="project-content">
+                        <h3>NexaPhone Website</h3>
+
+                        <p>
+                            A product website concept presenting a
+                            smartphone with a dedicated product layout.
+                        </p>
+
+                        <p class="project-tech">
+                            HTML · CSS · JavaScript
+                        </p>
+
+                        <a
+                            href="https://nexaphone-website.vercel.app/"
+                            class="button button-primary project-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Project
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- FEATURE 6: Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="section-heading">
+                <p class="eyebrow">GET IN TOUCH</p>
+                <h2>Contact Me</h2>
+                <p>Have a question or project idea? Send me a message.</p>
+            </div>
+
+            <div class="contact-content">
+
+                <div class="contact-info">
+                    <h3>Let's Talk</h3>
+
+                    <p>
+                        I am open to connecting with people, learning
+                        together, and discussing website projects.
+                    </p>
+
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <a href="mailto:your-email@example.com">
+                            your-email@example.com
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>Location</h4>
+                        <p>Nigeria</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>GitHub</h4>
+                        <a
+                            href="https://github.com/your-username"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Visit my GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- JavaScript validates this form and displays feedback.
+                     It does not send messages to a server. -->
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            autocomplete="name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Write your message"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="button button-primary submit-button"
+                    >
+                        Send Message
+                    </button>
+
+                    <p
+                        class="form-status"
+                        id="form-status"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FEATURE 7: Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <a href="#home" class="footer-brand">X-Technologies</a>
+
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="footer-socials">
+                <a
+                    href="https://github.com/your-username"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+
+        <p class="copyright">
+            &copy; <span id="current-year">2026</span> X-Technologies.
+            All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
