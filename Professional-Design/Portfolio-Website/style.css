@@ -1,0 +1,369 @@
+
+/* FEATURE 0: PROFESSIONAL INTRO SCREEN */
+
+/* 1. DESIGN SYSTEM */
+
+:root {
+    --color-background: #080E1B;
+    --color-surface: #101A2D;
+    --color-text: #F4F7FC;
+    --color-muted: #9AA9C0;
+    --color-accent: #7CB8FF;
+    --color-border: rgb(255 255 255 / 10%);
+
+    --font-body: "Inter", "Segoe UI", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+body.intro-active {
+    overflow: hidden;
+}
+
+/* 2. FULL-SCREEN BACKGROUND */
+
+.intro-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: grid;
+    place-items: center;
+
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 24px;
+
+    overflow: hidden;
+    isolation: isolate;
+
+    background-color: var(--color-background);
+
+    background-image:
+        radial-gradient(
+            ellipse at 50% 35%,
+            rgb(45 91 153 / 22%),
+            transparent 55%
+        ),
+        radial-gradient(
+            circle at 10% 90%,
+            rgb(31 82 142 / 12%),
+            transparent 35%
+        );
+
+    opacity: 1;
+    visibility: visible;
+
+    transition:
+        opacity 0.65s ease,
+        visibility 0.65s ease;
+}
+
+/* 3. SUBTLE BACKGROUND GRID */
+
+.intro-screen::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background-image:
+        linear-gradient(
+            rgb(255 255 255 / 3%) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgb(255 255 255 / 3%) 1px,
+            transparent 1px
+        );
+
+    background-size: 48px 48px;
+
+    mask-image: linear-gradient(
+        to bottom,
+        black,
+        transparent 90%
+    );
+
+    pointer-events: none;
+}
+
+/* 4. INTRO EXIT EFFECT */
+
+.intro-screen--exit {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* 5. CENTERED GLASS PANEL */
+
+.intro-content {
+    position: relative;
+
+    width: min(100%, 520px);
+    padding: 54px 36px 38px;
+
+    border: 1px solid var(--color-border);
+    border-radius: 24px;
+
+    background-color: rgb(16 26 45 / 78%);
+
+    box-shadow:
+        0 30px 90px rgb(0 0 0 / 35%),
+        inset 0 1px 0 rgb(255 255 255 / 5%);
+
+    text-align: center;
+
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    animation: introContentEnter 0.8s ease-out both;
+}
+
+/* 6. MONOGRAM LOGO */
+
+.intro-logo {
+    display: grid;
+    place-items: center;
+
+    width: 76px;
+    height: 76px;
+
+    margin: 0 auto 30px;
+
+    border: 1px solid rgb(124 184 255 / 45%);
+    border-radius: 22px;
+
+    background-color: rgb(124 184 255 / 8%);
+
+    color: var(--color-text);
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+
+    box-shadow: 0 0 36px rgb(74 144 226 / 10%);
+}
+
+/* 7. INTRO TYPOGRAPHY */
+
+.intro-label {
+    margin: 0 0 16px;
+
+    color: var(--color-accent);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 1.6;
+}
+
+.intro-content h1 {
+    margin: 0 0 14px;
+
+    color: var(--color-text);
+
+    font-size: clamp(2.2rem, 6vw, 3.5rem);
+    font-weight: 800;
+    letter-spacing: -1.8px;
+    line-height: 1.1;
+}
+
+.intro-description {
+    max-width: 360px;
+
+    margin: 0 auto;
+
+    color: var(--color-muted);
+
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+/* 8. CIRCULAR LOADER */
+
+.intro-loader {
+    position: relative;
+
+    display: grid;
+    place-items: center;
+
+    width: 48px;
+    height: 48px;
+
+    margin: 32px auto 16px;
+
+    border: 2px solid rgb(255 255 255 / 10%);
+    border-top-color: var(--color-accent);
+    border-right-color: rgb(124 184 255 / 40%);
+
+    border-radius: 50%;
+
+    animation: introSpin 1s linear infinite;
+}
+
+.intro-loader span {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background-color: var(--color-accent);
+
+    box-shadow: 0 0 14px rgb(124 184 255 / 65%);
+}
+
+.intro-loading-text {
+    margin: 0;
+
+    color: var(--color-muted);
+
+    font-size: 0.8rem;
+    letter-spacing: 0.4px;
+}
+
+/* 9. SKIP BUTTON */
+
+.intro-skip {
+    margin-top: 30px;
+    padding: 11px 20px;
+
+    border: 1px solid rgb(255 255 255 / 18%);
+    border-radius: 999px;
+
+    background-color: transparent;
+    color: var(--color-text);
+
+    font: inherit;
+    font-size: 0.85rem;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.intro-skip:hover {
+    transform: translateY(-2px);
+
+    border-color: rgb(124 184 255 / 65%);
+    background-color: rgb(124 184 255 / 8%);
+}
+
+.intro-skip:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+}
+
+.intro-skip:disabled {
+    cursor: default;
+    opacity: 0.6;
+}
+
+/* 10. ENTRANCE ANIMATION */
+
+@keyframes introContentEnter {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 11. LOADER ROTATION */
+
+@keyframes introSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* 12. TABLET AND MOBILE */
+
+@media (max-width: 600px) {
+    .intro-screen {
+        padding: 18px;
+    }
+
+    .intro-content {
+        padding: 42px 22px 30px;
+        border-radius: 20px;
+    }
+
+    .intro-logo {
+        width: 66px;
+        height: 66px;
+        margin-bottom: 26px;
+    }
+
+    .intro-label {
+        font-size: 0.65rem;
+        letter-spacing: 2px;
+    }
+
+    .intro-content h1 {
+        letter-spacing: -1px;
+    }
+}
+
+/* 13. SHORT SCREENS */
+
+@media (max-height: 600px) {
+    .intro-content {
+        padding-top: 24px;
+        padding-bottom: 22px;
+    }
+
+    .intro-logo {
+        width: 54px;
+        height: 54px;
+        margin-bottom: 18px;
+    }
+
+    .intro-loader {
+        margin-top: 20px;
+    }
+
+    .intro-skip {
+        margin-top: 18px;
+    }
+}
+
+/* 14. REDUCED-MOTION ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .intro-content,
+    .intro-loader {
+        animation: none;
+    }
+
+    .intro-screen {
+        transition: none;
+    }
+
+    .intro-skip {
+        transition: none;
+    }
+
+    .intro-content {
+        opacity: 1;
+        transform: none;
+    }
+}
