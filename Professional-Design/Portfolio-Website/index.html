@@ -1,51 +1,984 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <meta name="theme-color" content="#080E1B">
+    <meta name="description" content="The portfolio of Okeke Divine Gift Kosisochukwu, Software Engineer and creative problem solver.">
+    <title>Okeke Divine Gift | Software Engineer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
     <!-- FEATURE 0: INTRO SCREEN -->
     <div class="intro-screen" id="intro-screen">
         <div class="intro-content">
-
-            <div class="intro-logo">
-                YN
-            </div>
+            <div class="intro-logo">X-T</div>
 
             <p class="intro-label">WELCOME TO MY PORTFOLIO</p>
 
-            <h1>Your Name</h1>
+            <h1>Okeke Divine Gift</h1>
 
             <p class="intro-description">
-                Software Developer | Creative Problem Solver
+                Software Engineer | Creative Problem Solver
             </p>
 
-            <div
-                class="intro-loader"
-                role="status"
-                aria-label="Loading portfolio"
-            >
+            <div class="intro-loader" role="status" aria-label="Loading portfolio">
                 <span></span>
             </div>
 
-            <p class="intro-loading-text">Preparing your experience...</p>
+            <p class="intro-loading-text">Loading ...</p>
 
-            <button
-                class="intro-skip"
-                id="intro-skip"
-                type="button"
-            >
+            <button class="intro-skip" id="intro-skip" type="button">
                 Skip Intro
             </button>
-
         </div>
     </div>
 
+    <!-- FEATURE 1: PROFESSIONAL NAVIGATION -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
 
-<script src="script.js"></script>
+            <a href="#home" class="nav-logo">
+                <span class="nav-logo-mark">X-T</span>
+
+                <span class="nav-logo-text">
+                    <strong>Okeke Divine Gift .K.</strong>
+                    <small>Software Engineer</small>
+                </span>
+            </a>
+
+            <button
+                class="nav-toggle"
+                id="nav-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="nav-links"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+
+                <a href="#contact" class="nav-cta">
+                    Let's Talk <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- FEATURE 2: HERO SECTION -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="hero-label">
+                    <span class="hero-status"></span>
+                    AVAILABLE FOR OPPORTUNITIES
+                </p>
+
+                <h1>
+                    Hi, I'm
+                    <span class="hero-name">Okeke Divine Gift Kosisochukwu</span>.
+                    <br>
+                    I build
+                    <span class="hero-highlight">digital experiences.</span>
+                </h1>
+
+                <p class="hero-description">
+                    I'm a software developer who builds modern, responsive
+                    and user-friendly websites. I enjoy turning ideas into
+                    useful digital products through clean code and creative design.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="hero-button hero-button-primary">
+                        Explore My Work <span aria-hidden="true">↗</span>
+                    </a>
+
+                    <a href="#contact" class="hero-button hero-button-secondary">
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="hero-details">
+                    <div class="hero-detail">
+                        <strong>01.</strong>
+                        <span>Creative Thinking</span>
+                    </div>
+
+                    <div class="hero-detail">
+                        <strong>02.</strong>
+                        <span>Clean Development</span>
+                    </div>
+
+                    <div class="hero-detail">
+                        <strong>03.</strong>
+                        <span>Responsive Design</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-glow"></div>
+
+                <div class="hero-card">
+                    <div class="hero-card-top">
+                        <div class="hero-avatar">X-T</div>
+
+                        <div>
+                            <h2>Okeke Divine Gift .K.</h2>
+                            <p>Software Engineer</p>
+                        </div>
+
+                        <span class="hero-card-dot"></span>
+                    </div>
+
+                    <div class="hero-code">
+                        <p><span class="code-purple">const</span> developer = {</p>
+
+                        <p class="code-indent">
+                            name: <span class="code-green">"Okeke Divine Gift"</span>,
+                        </p>
+
+                        <p class="code-indent">
+                            role: <span class="code-green">"Software Engineer"</span>,
+                        </p>
+
+                        <p class="code-indent">
+                            creative: <span class="code-orange">true</span>,
+                        </p>
+
+                        <p class="code-indent">
+                            readyToBuild: <span class="code-orange">true</span>
+                        </p>
+
+                        <p>};</p>
+                    </div>
+
+                    <div class="hero-card-bottom">
+                        <span class="hero-card-indicator"></span>
+                        <span>Turning ideas into reality</span>
+                    </div>
+                </div>
+
+                <div class="hero-floating-tag hero-tag-top">
+                    <span>✦</span> Creative
+                </div>
+
+                <div class="hero-floating-tag hero-tag-bottom">
+                    <span>⌘</span> Engineer
+                </div>
+            </div>
+
+            <a href="#about" class="hero-scroll">
+                <span class="hero-scroll-line"></span>
+                Scroll to explore
+            </a>
+
+            <div class="hero-message" id="hero-message" role="status" aria-live="polite">
+                Welcome! Thanks for visiting my portfolio.
+            </div>
+
+        </section>
+
+        <!-- FEATURE 3: ABOUT SECTION -->
+        <section class="about-section reveal" id="about">
+
+            <div class="about-container">
+
+                <div class="about-content">
+
+                    <p class="about-eyebrow">
+                        <span></span>
+                        GET TO KNOW ME
+                    </p>
+
+                    <h2 class="about-heading">
+                        More than code.
+                        <br>
+                        <span>A builder of ideas.</span>
+                    </h2>
+
+                    <p class="about-intro">
+                        I'm a software developer passionate about creating
+                        digital experiences that solve real problems.
+                    </p>
+
+                    <p class="about-description">
+                        I enjoy taking ideas from concept to reality through
+                        thoughtful design, clean code, and continuous learning.
+                        My goal is to build websites and applications that
+                        look professional, work reliably, and make life easier
+                        for the people who use them.
+                    </p>
+
+                    <p class="about-description">
+                        Whether I'm developing a responsive website, exploring
+                        new technologies, or solving a challenging problem,
+                        I focus on improving my skills and delivering meaningful
+                        results.
+                    </p>
+
+                    <a href="#contact" class="about-button">
+                        Let's Work Together <span aria-hidden="true">↗</span>
+                    </a>
+
+                </div>
+
+                <div class="about-visual">
+
+                    <div class="about-card">
+
+                        <div class="about-card-header">
+                            <span class="about-card-label">DEVELOPER PROFILE</span>
+                            <span class="about-card-symbol">✳</span>
+                        </div>
+
+                        <div class="about-profile">
+                            <div class="about-profile-avatar">X-T</div>
+
+                            <div>
+                                <h3>Okeke Divine Gift .K.</h3>
+                                <p>Software Engineer</p>
+                            </div>
+                        </div>
+
+                        <div class="about-card-divider"></div>
+
+                        <div class="about-fact">
+                            <span>Focus</span>
+                            <strong>Software Development</strong>
+                        </div>
+
+                        <div class="about-fact">
+                            <span>Approach</span>
+                            <strong>Learn · Build · Improve</strong>
+                        </div>
+
+                        <div class="about-fact">
+                            <span>Goal</span>
+                            <strong>Build Useful Products</strong>
+                        </div>
+
+                        <div class="about-card-footer">
+                            <span class="about-footer-dot"></span>
+                            Always learning. Always building.
+                        </div>
+
+                    </div>
+
+                    <div class="about-decoration about-decoration-one"></div>
+                    <div class="about-decoration about-decoration-two"></div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FEATURE 4: SKILLS SECTION -->
+        <section class="skills-section reveal" id="skills">
+
+            <div class="skills-container">
+
+                <div class="skills-heading">
+
+                    <p class="skills-eyebrow">
+                        <span></span>
+                        MY TECHNICAL TOOLKIT
+                    </p>
+
+                    <h2>
+                        Skills that turn
+                        <br>
+                        <span>ideas into reality.</span>
+                    </h2>
+
+                    <p class="skills-intro">
+                        The technologies and tools I use to design,
+                        develop, and build modern digital experiences.
+                    </p>
+
+                </div>
+
+                <div class="skills-grid">
+
+                    <!-- SKILL 1 -->
+                    <article class="skill-card reveal">
+                        <div class="skill-card-top">
+                            <div class="skill-icon">H5</div>
+                            <span class="skill-number">01</span>
+                        </div>
+
+                        <h3>HTML</h3>
+
+                        <p class="skill-description">
+                            Building structured and accessible web pages.
+                        </p>
+
+                        <div class="skill-level">
+                            <div class="skill-level-label">
+                                <span>Proficiency</span>
+                                <span>85%</span>
+                            </div>
+
+                            <div
+                                class="skill-track"
+                                role="progressbar"
+                                aria-label="HTML proficiency"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                                aria-valuenow="85"
+                            >
+                                <div class="skill-progress" style="--skill-width: 85%"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- SKILL 2 -->
+                    <article class="skill-card reveal">
+                        <div class="skill-card-top">
+                            <div class="skill-icon">C3</div>
+                            <span class="skill-number">02</span>
+                        </div>
+
+                        <h3>CSS</h3>
+
+                        <p class="skill-description">
+                            Creating responsive layouts and professional designs.
+                        </p>
+
+                        <div class="skill-level">
+                            <div class="skill-level-label">
+                                <span>Proficiency</span>
+                                <span>80%</span>
+                            </div>
+
+                            <div
+                                class="skill-track"
+                                role="progressbar"
+                                aria-label="CSS proficiency"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                                aria-valuenow="80"
+                            >
+                                <div class="skill-progress" style="--skill-width: 80%"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- SKILL 3 -->
+                    <article class="skill-card reveal">
+                        <div class="skill-card-top">
+                            <div class="skill-icon">JS</div>
+                            <span class="skill-number">03</span>
+                        </div>
+
+                        <h3>JavaScript</h3>
+
+                        <p class="skill-description">
+                            Adding interaction and functionality to websites.
+                        </p>
+
+                        <div class="skill-level">
+                            <div class="skill-level-label">
+                                <span>Proficiency</span>
+                                <span>75%</span>
+                            </div>
+
+                            <div
+                                class="skill-track"
+                                role="progressbar"
+                                aria-label="JavaScript proficiency"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                                aria-valuenow="75"
+                            >
+                                <div class="skill-progress" style="--skill-width: 75%"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- SKILL 4 -->
+                    <article class="skill-card reveal">
+                        <div class="skill-card-top">
+                            <div class="skill-icon">R</div>
+                            <span class="skill-number">04</span>
+                        </div>
+
+                        <h3>React</h3>
+
+                        <p class="skill-description">
+                            Building reusable components and interactive interfaces.
+                        </p>
+
+                        <div class="skill-level">
+                            <div class="skill-level-label">
+                                <span>Proficiency</span>
+                                <span>80%</span>
+                            </div>
+
+                            <div
+                                class="skill-track"
+                                role="progressbar"
+                                aria-label="React proficiency"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                                aria-valuenow="80"
+                            >
+                                <div class="skill-progress" style="--skill-width: 80%"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- SKILL 5 -->
+                    <article class="skill-card reveal">
+                        <div class="skill-card-top">
+                            <div class="skill-icon">N</div>
+                            <span class="skill-number">05</span>
+                        </div>
+
+                        <h3>Node.js and Express</h3>
+
+                        <p class="skill-description">
+                            Building backend APIs and server-side functionality.
+                        </p>
+
+                        <div class="skill-level">
+                            <div class="skill-level-label">
+                                <span>Proficiency</span>
+                                <span>80%</span>
+                            </div>
+
+                            <div
+                                class="skill-track"
+                                role="progressbar"
+                                aria-label="Backend proficiency"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                                aria-valuenow="80"
+                            >
+                                <div class="skill-progress" style="--skill-width: 80%"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- SKILL 6 -->
+                    <article class="skill-card reveal">
+                        <div class="skill-card-top">
+                            <div class="skill-icon">M</div>
+                            <span class="skill-number">06</span>
+                        </div>
+
+                        <h3>MERN Stack</h3>
+
+                        <p class="skill-description">
+                            Building full-stack web applications.
+                        </p>
+
+                        <div class="skill-level">
+                            <div class="skill-level-label">
+                                <span>Proficiency</span>
+                                <span>80%</span>
+                            </div>
+
+                            <div
+                                class="skill-track"
+                                role="progressbar"
+                                aria-label="MERN stack proficiency"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                                aria-valuenow="80"
+                            >
+                                <div class="skill-progress" style="--skill-width: 80%"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="skills-footer">
+                    <span class="skills-footer-symbol">✦</span>
+                    <p>Always learning new technologies and improving my craft.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FEATURE 5: PROJECTS SECTION -->
+        <section class="projects-section reveal" id="projects">
+
+            <div class="projects-container">
+
+                <div class="projects-heading">
+                    <p class="projects-eyebrow">
+                        <span></span>
+                        SELECTED WORK
+                    </p>
+
+                    <h2>
+                        Projects built with
+                        <br>
+                        <span>purpose and creativity.</span>
+                    </h2>
+
+                    <p class="projects-intro">
+                        A collection of projects where I turn ideas into
+                        practical, user-friendly digital experiences.
+                    </p>
+                </div>
+
+                <div class="projects-filters" aria-label="Filter projects">
+                    <button
+                        id="all-projects"
+                        class="project-filter active"
+                        type="button"
+                        data-filter="all"
+                        aria-pressed="true"
+                    >
+                        All Projects
+                    </button>
+
+                    <button
+                        id="website-projects"
+                        class="project-filter"
+                        type="button"
+                        data-filter="website"
+                        aria-pressed="false"
+                    >
+                        Websites
+                    </button>
+
+                    <button
+                        id="application-projects"
+                        class="project-filter"
+                        type="button"
+                        data-filter="application"
+                        aria-pressed="false"
+                    >
+                        Applications
+                    </button>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- PROJECT 1 -->
+                    <article class="project-card reveal" data-category="website">
+                        <div class="project-image project-image-one">
+
+                            <div class="project-preview">
+                                <span class="preview-label">PROJECT 01</span>
+
+                                <div class="preview-window">
+                                    <div class="preview-window-top">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+
+                                    <div class="preview-content">
+                                        <div class="preview-line"></div>
+                                        <div class="preview-line short"></div>
+                                        <div class="preview-block"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="project-type">WEBSITE</span>
+                        </div>
+
+                        <div class="project-info">
+                            <div class="project-title-row">
+                                <h3>Personal Portfolio</h3>
+                                <span class="project-number">01</span>
+                            </div>
+
+                            <p>
+                                A professional portfolio showcasing my skills,
+                                experience, and creative work.
+                            </p>
+
+                            <div class="project-technologies">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <a href="#" class="project-link project-demo">
+                                    Live Demo <span aria-hidden="true">↗</span>
+                                </a>
+
+                                <a href="#" class="project-link project-source">
+                                    Source Code <span aria-hidden="true">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 2 -->
+                    <article class="project-card reveal" data-category="application">
+                        <div class="project-image project-image-two">
+
+                            <div class="project-preview">
+                                <span class="preview-label">PROJECT 02</span>
+
+                                <div class="preview-dashboard">
+                                    <div class="preview-dashboard-sidebar"></div>
+
+                                    <div class="preview-dashboard-content">
+                                        <div class="preview-dashboard-heading"></div>
+
+                                        <div class="preview-stat-row">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+
+                                        <div class="preview-chart">
+                                            <i></i>
+                                            <i></i>
+                                            <i></i>
+                                            <i></i>
+                                            <i></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="project-type">APPLICATION</span>
+                        </div>
+
+                        <div class="project-info">
+                            <div class="project-title-row">
+                                <h3>Student Manager</h3>
+                                <span class="project-number">02</span>
+                            </div>
+
+                            <p>
+                                A student management interface for organizing
+                                student records and tracking information.
+                            </p>
+
+                            <div class="project-technologies">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <a href="#" class="project-link project-demo">
+                                    Live Demo <span aria-hidden="true">↗</span>
+                                </a>
+
+                                <a href="#" class="project-link project-source">
+                                    Source Code <span aria-hidden="true">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 3 -->
+                    <article class="project-card reveal" data-category="website">
+                        <div class="project-image project-image-three">
+
+                            <div class="project-preview">
+                                <span class="preview-label">PROJECT 03</span>
+
+                                <div class="preview-landing">
+                                    <div class="preview-landing-heading"></div>
+                                    <div class="preview-landing-text"></div>
+                                    <div class="preview-landing-button"></div>
+
+                                    <div class="preview-landing-cards">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="project-type">WEBSITE</span>
+                        </div>
+
+                        <div class="project-info">
+                            <div class="project-title-row">
+                                <h3>Business Landing Page</h3>
+                                <span class="project-number">03</span>
+                            </div>
+
+                            <p>
+                                A modern business website designed to present
+                                services and encourage customer enquiries.
+                            </p>
+
+                            <div class="project-technologies">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <a href="#" class="project-link project-demo">
+                                    Live Demo <span aria-hidden="true">↗</span>
+                                </a>
+
+                                <a href="#" class="project-link project-source">
+                                    Source Code <span aria-hidden="true">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="projects-footer">
+                    <p>Every project is another opportunity to learn and improve.</p>
+
+                    <a href="#contact">
+                        Have a project in mind? Let's talk
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FEATURE 6: CONTACT SECTION -->
+        <section class="contact-section reveal" id="contact">
+
+            <div class="contact-container">
+
+                <div class="contact-heading">
+                    <p class="contact-eyebrow">
+                        <span></span>
+                        GET IN TOUCH
+                    </p>
+
+                    <h2>
+                        Have an idea?
+                        <br>
+                        <span>Let's build it together.</span>
+                    </h2>
+
+                    <p class="contact-intro">
+                        Have a project in mind, an opportunity to share, or
+                        just want to connect? I'd love to hear from you.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+
+                    <!-- CONTACT INFORMATION -->
+                    <div class="contact-information">
+
+                        <div class="contact-information-header">
+                            <span class="contact-icon">✦</span>
+
+                            <h3>Let's start a conversation.</h3>
+
+                            <p>
+                                Tell me what you're working on, what you need,
+                                or how we can work together.
+                            </p>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-method-icon" aria-hidden="true">@</div>
+
+                            <div>
+                                <span>Email me</span>
+                                <a href="mailto:yourname@example.com">
+                                    yourname@example.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-method-icon" aria-hidden="true">↗</div>
+
+                            <div>
+                                <span>Project enquiries</span>
+                                <p>Websites, applications, and collaborations</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-note">
+                            <span class="contact-note-dot"></span>
+                            <p>Open to meaningful projects and new opportunities.</p>
+                        </div>
+
+                    </div>
+
+                    <!-- CONTACT FORM -->
+                    <form class="contact-form" id="contact-form">
+
+                        <div class="contact-form-heading">
+                            <h3>Send me a message</h3>
+                            <p>Fill in the details below and let's connect.</p>
+                        </div>
+
+                        <div class="contact-field">
+                            <label for="contact-name">Your name</label>
+
+                            <input
+                                type="text"
+                                id="contact-name"
+                                name="name"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                required
+                            >
+                        </div>
+
+                        <div class="contact-field">
+                            <label for="contact-email">Email address</label>
+
+                            <input
+                                type="email"
+                                id="contact-email"
+                                name="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+
+                        <div class="contact-field">
+                            <label for="contact-subject">Subject</label>
+
+                            <input
+                                type="text"
+                                id="contact-subject"
+                                name="subject"
+                                placeholder="What would you like to discuss?"
+                                required
+                            >
+                        </div>
+
+                        <div class="contact-field">
+                            <label for="contact-message">Your message</label>
+
+                            <textarea
+                                id="contact-message"
+                                name="message"
+                                rows="5"
+                                placeholder="Tell me a little about your idea..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button class="contact-submit" type="submit">
+                            Send Message <span aria-hidden="true">↗</span>
+                        </button>
+
+                        <p class="contact-form-note">
+                            Your message details will be checked before submission.
+                        </p>
+
+                    </form>
+
+                    <p
+                        class="contact-feedback"
+                        id="contact-feedback"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FEATURE 7: PROFESSIONAL FOOTER -->
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-top">
+
+                <a href="#home" class="footer-brand">
+                    <span class="footer-logo">X-T</span>
+
+                    <span class="footer-brand-text">
+                        <strong>Okeke Divine Gift .K.</strong>
+                        <small>Software Engineer</small>
+                    </span>
+                </a>
+
+                <p class="footer-description">
+                    Building thoughtful digital experiences
+                    through code, creativity, and continuous learning.
+                </p>
+
+                <div class="footer-socials">
+                    <a
+                        href="https://github.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub"
+                    >
+                        GitHub ↗
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                    >
+                        LinkedIn ↗
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="footer-year">2026</span>
+                    Okeke Divine Gift .K. All rights reserved.
+                </p>
+
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <a href="#home" class="back-to-top">Back to top ↑</a>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- FEATURE 8: SCROLL TO TOP BUTTON -->
+    <button
+        class="scroll-top-button"
+        id="scroll-top-button"
+        type="button"
+        aria-label="Scroll back to top"
+    >
+        ↑
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
